@@ -21,6 +21,11 @@
         }
         const hola= React.createElement(Hola,{name:'Platzi'});
         ReactDOM.render(hola,document.getElementById('app'));
+        setTimeout(
+            ()=>{
+            ReactDOM.render(
+             React.createElement(Hola,{name: 'Platzi!'}),document.getElementById('app'));
+        },1000);
     </script>
 </body>
 
